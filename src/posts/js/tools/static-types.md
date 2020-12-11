@@ -160,16 +160,16 @@ function sayMyName(name) {
 {
   // ...
   "compilerOptions": {
-		// ...
-		// Запрещает класть в переменную null без явного объявления
+    // ...
+    // Запрещает класть в переменную null без явного объявления
     "strictNullChecks": true,
-		// Делает вызовы методов bind, call, apply строго типизированными
+    // Делает вызовы методов bind, call, apply строго типизированными
     "strictBindCallApply": true,
     // Делает более строгими типы функция
     "strictFunctionTypes": true,
     // Запрешает объявления не пустого поля класса без инициализации
     "strictPropertyInitialization": true,
-		// ...
+    // ...
   },
   // ...
 }
