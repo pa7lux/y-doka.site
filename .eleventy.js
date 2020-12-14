@@ -70,6 +70,7 @@ module.exports = function (config) {
   // Pass-through files
   config.addPassthroughCopy("src/robots.txt")
   config.addPassthroughCopy("src/site.webmanifest")
+  config.addPassthroughCopy("src/**/*.(html|gif|jpg|png|svg|mp4|webm|zip)")
   config.addPassthroughCopy("src/assets/images")
   config.addPassthroughCopy("src/assets/video")
   config.addPassthroughCopy("src/assets/audio")

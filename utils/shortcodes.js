@@ -10,7 +10,7 @@ module.exports = {
   demo: function (demoName, title = "", height = 400) {
     return outdent`
       <iframe
-        src="${path.join("/demos", demoName)}"
+        src="${demoName}/index.html"
         title="${title}"
         height="${height}"
         onload="this.style.height = this.contentWindow.document.body.scrollHeight + 'px'"
