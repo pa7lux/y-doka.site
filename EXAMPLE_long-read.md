@@ -75,4 +75,4 @@ summary:
   9. Один раздел должен переходить в другой
   10. Предпочитайте markdown, а не html при оформлении статьи
 
-Вы можете ориентироваться на статью ([Гайд по flexbox](https://github.com/Y-Doka/y-doka.site/blob/master/src/posts/css/long/flexbox-guide.md)) в качестве примера оформления.
+Вы можете ориентироваться на статью ([Гайд по flexbox](https://github.com/Y-Doka/y-doka.site/blob/master/src/content/css/long/flexbox-guide.md)) в качестве примера оформления.
