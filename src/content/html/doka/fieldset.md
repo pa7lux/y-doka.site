@@ -24,19 +24,19 @@ summary:
   <fieldset>
     <legend>Прозвище Дракса из «Стражей Галактики»?</legend>
     <label>
-      <input type="radio" name="answer" value="Exterminator">
+      <input type="radio" name="answer" value="Exterminator" />
       Уничтожитель
     </label>
     <label>
-      <input type="radio" name="answer" value="Destroyer">
+      <input type="radio" name="answer" value="Destroyer" />
       Разрушитель
     </label>
     <label>
-      <input type="radio" name="answer" value="Accuser">
+      <input type="radio" name="answer" value="Accuser" />
       Обвинитель
     </label>
     <label>
-      <input type="radio" name="answer" value="Sweet-tooth">
+      <input type="radio" name="answer" value="Sweet-tooth" />
       Сладкоежка
     </label>
   </fieldset>
@@ -64,13 +64,13 @@ summary:
 
 ## Атрибуты
 
-- `disabled` — блокирует все контролы __внутри__ тега (как будто каждому из них указали этот атрибут — очень удобно);
-- `form` — связывает контролы __внутри__ тега с формой (будто они располагаются внутри) — для этого в значение атрибута следует указать `id` формы;
+- `disabled` — блокирует все контролы **внутри** тега (как будто каждому из них указали этот атрибут — очень удобно);
+- `form` — связывает контролы **внутри** тега с формой (будто они располагаются внутри) — для этого в значение атрибута следует указать `id` формы;
 - также для `<fieldset>` доступны все «Глобальные атрибуты».
 
 ## Подсказки
 
-💡 Самое удобное в использовании `<fieldset>` — возможность заблокировать __все__ вложенные контролы внутри тега одним атрибутом `disabled`:
+💡 Самое удобное в использовании `<fieldset>` — возможность заблокировать **все** вложенные контролы внутри тега одним атрибутом `disabled`:
 
 <p class="codepen" data-height="347" data-theme-id="light" data-default-tab="result" data-user="Realetive" data-slug-hash="RwGNEmp" data-preview="true" style="height: 347px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="fieldset demo">
   <span>See the Pen <a href="https://codepen.io/Realetive/pen/RwGNEmp">

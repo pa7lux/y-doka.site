@@ -306,7 +306,7 @@ function throttle(callee, timeout) {
 ```js
 async function fetchPosts() {
   const { posts, next } = await server.posts(nextPage)
-  // Делаем что-то с posts и next.
+  // Делаем что-то с content и next.
 }
 ```
 

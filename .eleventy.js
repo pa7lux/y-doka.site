@@ -64,7 +64,7 @@ module.exports = function (config) {
 
   // Collections
   config.addCollection("searchable", (collection) =>
-    collection.getFilteredByGlob("./src/posts/**/*.md")
+    collection.getFilteredByGlob("./src/content/**/*.md")
   )
 
   // Pass-through files
