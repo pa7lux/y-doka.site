@@ -1,6 +1,6 @@
 ---
 layout: nav-page
-permalink: /posts/js/tools/
+permalink: /js/tools/
 eleventyNavigation:
   key: jsTools
 ---
@@ -12,7 +12,7 @@ eleventyNavigation:
     <div class="navpage__column">
       <ul class="navpage__list">
         {%- for post in collections.jsTools -%}
-        <a href="/posts/{{ post.data.section }}/{{ post.data.type }}/{{ post.data.name }}">
+        <a href="/{{ post.data.section }}/{{ post.data.type }}/{{ post.data.name }}">
           <li class="navpage__list-item">{{ post.data.title }}</li>
         </a>
         {%- endfor -%}
