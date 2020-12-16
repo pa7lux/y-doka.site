@@ -32,7 +32,8 @@ module.exports = {
       })
   },
 
-  dropPostsFolder: function (path) {
-    return path.replace(/^\/posts/, "")
+  dropFolder: function (path, folderName) {
+    const regexp = new RegExp(`\/${folderName}`)
+    return path.replace(regexp, "")
   },
 }
