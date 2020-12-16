@@ -122,7 +122,7 @@ promisifiedGetData()
 
 **`then`**
 
-Детальное описание работы `then` описано в статье [Promise. Метод `then`](/posts/js/doka/promise-then)
+Детальное описание работы `then` описано в статье [Promise. Метод `then`](/js/doka/promise-then)
 
 Метод `then` используют, чтобы выполнить код после успешного выполнения асинхронной операции.
 
@@ -143,7 +143,7 @@ fetch(`https://swapi.dev/api/films/${id}/`).then(function (movies) {
 
 **`catch`**
 
-Детальное описание работы `catch` описано в статье [Promise. Метод catch](/posts/js/doka/promise-catch)
+Детальное описание работы `catch` описано в статье [Promise. Метод catch](/js/doka/promise-catch)
 
 Метод `catch` используют, чтобы выполнить код в случае ошибки при выполнении асинхронной операции.
 
@@ -164,7 +164,7 @@ fetch(`https://swapi.dev/api/films/${id}/`).catch(function (error) {
 
 **finally**
 
-Детальное описание работы `finally` описано в [Promise. Метод finally](/posts/js/doka/promise-finally)
+Детальное описание работы `finally` описано в [Promise. Метод finally](/js/doka/promise-finally)
 
 Метод `finally` используют, чтобы выполнить код при завершении асинхронной операции. Он будет выполнен вне зависимости от того, была ли операция успешной или завершилась ошибкой.
 

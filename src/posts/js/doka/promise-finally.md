@@ -10,7 +10,7 @@ summary:
   - файнали
 ---
 
-Эта статья связана с понятием [Promise](/posts/js/long/promise)
+Эта статья связана с понятием [Promise](/js/long/promise)
 
 ## Кратко
 

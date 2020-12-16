@@ -18,7 +18,7 @@ summary:
 
 ## Как пользоваться
 
-Чтобы воспользоваться ESLint, нужно установить его через [менеджер зависимостей](/posts/js/tools/package-managers) в папке проекта:
+Чтобы воспользоваться ESLint, нужно установить его через [менеджер зависимостей](/js/tools/package-managers) в папке проекта:
 
 ```bash
 npm install --save-dev eslint
