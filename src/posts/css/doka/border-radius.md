@@ -117,3 +117,16 @@ CSS
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 {% include "authors/ABatickaya/author.njk" %}
+
+{% include "authors/Roman_Ganin/in-work.njk" %}
+
+🛠Если есть вероятность, что размер блока может быть «непостоянно квадратным», то можно перестраховаться и «закруглить» углы ещё больше чем на `50%`, чтобы сохранить закруглённость (а не вытягивать блок в «яйцо»):
+
+<p class="codepen" data-height="588" data-theme-id="light" data-default-tab="result" data-user="Realetive" data-slug-hash="yLaXjqp" data-preview="true" style="height: 588px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="border-radius">
+  <span>See the Pen <a href="https://codepen.io/Realetive/pen/yLaXjqp">
+  border-radius</a> by Roman Ganin (<a href="https://codepen.io/Realetive">@Realetive</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+{% include "authors/Roman_Ganin/author.njk" %}
