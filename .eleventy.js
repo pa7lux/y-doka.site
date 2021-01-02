@@ -5,6 +5,7 @@ const markdownIt = require("markdown-it")
 const markdownItAnchor = require("markdown-it-anchor")
 const markdownItContainer = require("markdown-it-container")
 
+const afterBuild = require("./utils/afterBuild.js")
 const filters = require("./utils/filters.js")
 const transforms = require("./utils/transforms.js")
 const shortcodes = require("./utils/shortcodes.js")
@@ -64,7 +65,7 @@ module.exports = function (config) {
 
   // Collections
   config.addCollection("searchable", (collection) =>
-    collection.getFilteredByGlob("./src/posts/**/*.md")
+    collection.getFilteredByGlob("./src/posts/{css,js,html}/**/*.md")
   )
 
   // Sortables collections
@@ -94,6 +95,8 @@ module.exports = function (config) {
 
   // Deep-Merge
   config.setDataDeepMerge(true)
+
+  config.on("afterBuild", afterBuild.updateElasticSearch)
 
   // Base Config
   return {

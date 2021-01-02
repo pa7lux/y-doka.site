@@ -36,6 +36,10 @@ module.exports = {
     return path.replace(/^\/posts/, "")
   },
 
+  jsonStringify: function (value) {
+    return JSON.stringify(value)
+  },
+
   sortByKey: function (arr, key) {
     if (!key) {
       return arr

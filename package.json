@@ -54,6 +54,7 @@
   "devDependencies": {
     "@11ty/eleventy-navigation": "^0.1.6",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
+    "@elastic/elasticsearch": "^7.10.0",
     "autoprefixer": "^10.1.0",
     "cross-env": "^7.0.3",
     "editorconfig-checker": "^3.3.0",
