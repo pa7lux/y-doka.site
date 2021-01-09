@@ -1,6 +1,7 @@
 [build]
     command = "npm run build"
     publish = "dist"
+    functions = "serverless"
 
 [context.production.environment]
     ELEVENTY_ENV = "production"
