@@ -19,6 +19,6 @@ const updateElasticSearch = () => {
 }
 
 exports.handler = async function (event, context) {
-  console.log(event.body.payload)
+  console.log(event)
   console.log(context)
 }
