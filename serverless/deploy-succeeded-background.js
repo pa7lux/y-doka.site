@@ -19,6 +19,8 @@ const updateElasticSearch = () => {
 }
 
 exports.handler = async function (event, context) {
-  console.log(event)
-  console.log(context)
+  const { payload, site } = JSON.parse(event.body)
+
+  console.log("payload", payload)
+  console.log("site", site)
 }
