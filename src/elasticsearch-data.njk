@@ -12,12 +12,11 @@ permalink: elasticsearch-data.json
     {% set defaultURL = item.url %}
   {% endif %}
   {
-  "title": "{{ item.data.title | lower | safe }}",
+  "title": "{{ item.data.title | safe }}",
+  "name": "{{ item.data.name | safe }}",
   "summary" : "{{ item.data.summary | default( [], true) | join(" ") | safe }}",
-  "type" : "{{ item.type | lower }}",
   "url": "{{defaultURL}}",
   "tags" : "{{ item.data.tags | safe }}",
   "text": {{item.templateContent | striptags | jsonStringify | safe }}
-  }
-  {% if not loop.last %},{% endif %}
+  }{% if not loop.last %},{% endif %}
 {%- endfor %}]
