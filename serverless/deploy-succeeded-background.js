@@ -11,7 +11,7 @@ const updateElasticSearch = () => {
     .bulk({
       datasource: JSON.parse(file),
       onDocument: (doc) => ({
-        index: { _index: "articles" },
+        index: { _index: "content" },
       }),
       refreshOnCompletion: true,
     })
@@ -21,6 +21,11 @@ const updateElasticSearch = () => {
 exports.handler = async function (event, context) {
   const { payload, site } = JSON.parse(event.body)
 
-  console.log("payload", payload)
-  console.log("site", site)
+  console.log("env var", process.env.CONTEXT)
+  console.log("env", process.env)
+  if (payload) {
+    const { context } = payload
+    if (context === "production") {
+    }
+  }
 }
