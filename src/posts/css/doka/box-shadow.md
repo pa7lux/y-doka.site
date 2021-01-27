@@ -124,21 +124,21 @@ summary:
 
 ```css
 .btn {
-	box-shadow:
-		5px 5px 10px #c9c9c9,
-		inset -5px -5px 8px -4px #c9c9c9,
-		-5px -5px 10px #fdfdfd,
-		inset 5px 5px 8px -4px #fdfdfd;
+  box-shadow:
+    5px 5px 10px #c9c9c9,
+    inset -5px -5px 8px -4px #c9c9c9,
+    -5px -5px 10px #fdfdfd,
+    inset 5px 5px 8px -4px #fdfdfd;
 }
 
 .btn:active {
-	box-shadow:
-		5px 5px 10px #c9c9c9,
-		inset -5px -5px 8px -4px #c9c9c9,
-		inset -6px -6px 8px 0px #fdfdfd,
-		-5px -5px 10px #fdfdfd,
-		inset 5px 5px 8px -4px #fdfdfd,
-		inset 6px 6px 8px 0px #c9c9c9;
+  box-shadow:
+    5px 5px 10px #c9c9c9,
+    inset -5px -5px 8px -4px #c9c9c9,
+    inset -6px -6px 8px 0px #fdfdfd,
+    -5px -5px 10px #fdfdfd,
+    inset 5px 5px 8px -4px #fdfdfd,
+    inset 6px 6px 8px 0px #c9c9c9;
 }
 ```
 

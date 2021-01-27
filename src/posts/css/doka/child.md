@@ -32,27 +32,27 @@ summary:
 ```css
 /* У всех пунктов списка будет жёлтый фон */
 .list-item {
-	background-color: #FFD829;
+  background-color: #FFD829;
 }
 
 /* У первого пункта списка, первого ребёнка будет тёмно-зелёный цвет фона */
 .list-item:first-child {
-	background-color: #064236;
+  background-color: #064236;
 }
 
 /* У последнего пункта списка, последнего ребёнка будет оранжевый цвет фона */
 .list-item:last-child {
-	background-color: #ED6742;
+  background-color: #ED6742;
 }
 
 /* У второго пункта списка будет зелёный цвет фона */
 .list-item:nth-child(2) {
-	background-color: #49A16C;
+  background-color: #49A16C;
 }
 
 /* У предпоследнего пункта списка будет розовый цвет фона */
 .list-item:nth-last-child(2) {
-	background-color: #F498AD;
+  background-color: #F498AD;
 }
 ```
 

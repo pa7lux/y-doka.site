@@ -27,7 +27,7 @@ summary:
 
 ```css
 .visibility-hidden {
-	visibility: hidden;
+  visibility: hidden;
 }
 ```
 
