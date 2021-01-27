@@ -5,6 +5,8 @@ author: N_Lopin
 co-authors:
 designers:
 contributors:
+tags:
+  - sprint-2
 summary:
   - селектор
   - найти элемент по селектору

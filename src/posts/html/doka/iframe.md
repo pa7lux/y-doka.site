@@ -5,6 +5,8 @@ author: grachev
 co-authors:
 designers:
 contributors:
+tags:
+  - sprint-2
 summary:
   - айфрейм
 ---

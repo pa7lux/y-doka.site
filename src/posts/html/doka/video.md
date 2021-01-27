@@ -6,6 +6,8 @@ co-authors:
   - grachev
 designers:
 contributors: skorobaeus
+tags:
+  - sprint-2
 summary:
   - video
   - <video>

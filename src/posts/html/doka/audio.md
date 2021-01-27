@@ -5,6 +5,8 @@ author: vladimir
 co-authors:
 designers:
 contributors: skorobaeus
+tags:
+  - sprint-2
 summary:
   - audio
   - аудио

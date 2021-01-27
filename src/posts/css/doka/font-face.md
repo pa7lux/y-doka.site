@@ -5,6 +5,8 @@ author: ABatickaya
 co-authors:
 designers:
 contributors:
+tags:
+  - sprint-2
 summary:
   - ＠-правило
   - подключение шрифта
