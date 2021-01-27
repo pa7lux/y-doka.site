@@ -4,7 +4,7 @@ name: text-transform
 author: ABatickaya
 co-authors:
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - text-transform
 ---
@@ -21,12 +21,17 @@ HTML
 
 ```html
 <div class="parent">
-  <h1 class="title">main title</h1>
-  <p class="paragraph">Lorem ipsum ...</p>
+	<h1 class="title">title case</h1>
+	<p class="paragraph">Title case (англ. «регистр заголовка»)...</p>
+
+	<article class="news">
+		<h2 class="title-case">who framed roger rabbit?</h2>
+		<p class="paragraph">The overarching villain...</p>
+	</article>
 </div>
 ```
 
-Текст в заголовке написан маленькими буквами, но по дизайну, как это часто случается, требуется, чтобы заголовок отображался заглавными буквами. Используем свойство `text-transform`. Заодно зададим это же свойство для параграфа, но со значением `capitalize`, которое преобразует текст так, чтобы каждое новое слово начиналось с заглавной буквы.
+Текст в заголовке написан маленькими буквами, но по дизайну, как это часто случается, требуется, чтобы заголовок отображался заглавными буквами. Используем свойство `text-transform`. Заодно зададим это же свойство для второго заголовка, но со значением `capitalize`, которое преобразует текст так, чтобы каждое новое слово начиналось с заглавной буквы.
 
 CSS
 
@@ -35,16 +40,12 @@ CSS
   text-transform: uppercase;
 }
 
-.paragraph {
+.title-case {
   text-transform: capitalize;
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="solarrust" data-slug-hash="JzBZpE" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JzBZpE">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/JzBZpE">
-  JzBZpE</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/text-transform/title-case", "Регистр заголовка", 640 %}
 
 ## Как это понять
 
@@ -72,22 +73,19 @@ CSS
 HTML
 
 ```html
-<p class="text">мама мыла раму</p>
+<p class="abbreviation">вниоптусх</p>
+<p class="meaning">Всероссийский научно-исследовательский...</p>
 ```
 
 CSS
 
 ```css
-.text {
-  text-transform: uppercase;
+.abbreviation {
+	text-transform: uppercase;
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="solarrust" data-slug-hash="rRoexv" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="rRoexv">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/rRoexv">
-  rRoexv</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/text-transform/uppercase", "Преобразование текста", 260 %}
 
 Если скопировать текст и вставить куда-нибудь в текстовое поле, то можно заметить, что ве буквы заглавные. А значит регистр исходного текста был изменён. А не просто поменялось внешнее отображение текста.
 
@@ -126,21 +124,12 @@ HTML
 CSS
 
 ```css
-...
-
 .menu-list {
   text-transform: uppercase;
 }
-
-...
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="solarrust" data-slug-hash="RdEajr" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RdEajr">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/RdEajr">
-  RdEajr</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/text-transform/menu", "Вёрстка навигации", 120 %}
 
 Теперь если даже в меню добавится ещё пара пунктов, то они также будут отображаться заглавными буквами.
 

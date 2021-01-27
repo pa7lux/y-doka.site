@@ -4,7 +4,7 @@ name: content
 author: ezhkov_d
 co-authors:
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - content
   - псевдоэлемент
@@ -108,11 +108,39 @@ content: unset;
 - Если значением является результат выполнения функций `counter()` или `counters()`, то псевдоэлемент будет содержать вычисленное значение счётчика в текущий момент. Эти функции работают совместно со свойствами `counter-reset` и `counter-increment`
 - Очень интересным значением является результат выполнения функции `attr()`. С помощью неё можно вывести в псевдоэлемент значение любого атрибута тега:
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="ezhkov" data-slug-hash="JjXMWGM" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="content. attr()">
-  <span>See the Pen <a href="https://codepen.io/ezhkov/pen/JjXMWGM">
-  content. attr()</a> by Denis Ezhkov (<a href="https://codepen.io/ezhkov">@ezhkov</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
+### HTML
+
+```html
+<p>
+  Ваш рейтинг: <span data-tip="Вычисляется на основе активности">212</a>
 </p>
+```
+
+### CSS
+
+```css
+[data-tip] {
+	position: relative;
+  cursor: help;
+}
+
+[data-tip]:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+[data-tip]::after {
+  content: attr(data-tip);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+}
+```
+
+{% demo "/content/rating", "attr", 200 %}
 
 - Ну и конечно же разработчики спецификации позаботились о нас и сделали возможность собрать сразу несколько значений в общую строку:
 
@@ -169,19 +197,91 @@ content: unset;
 
 🛠 Свойство `content` со значением `counter()` активно применяется в случаях, когда нужно расставить автоматическую нумерацию элементов, не относящихся к спискам:
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="ezhkov" data-slug-hash="JjXMNBP" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="content. counter()">
-  <span>See the Pen <a href="https://codepen.io/ezhkov/pen/JjXMNBP">
-  content. counter()</a> by Denis Ezhkov (<a href="https://codepen.io/ezhkov">@ezhkov</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+### HTML
+
+```html
+<section>
+  <h2>Внутренний механизм</h2>
+  <p>Механизм счётчика состоит из:</p>
+  <ul>
+    <li>кнопки;</li>
+    <li>пронумерованных кругов;</li>
+    <li>колеса прокрутки;</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Принцип действия</h2>
+  <p>Принцип действия..</p>
+</section>
+
+<section>
+  <h2>См. также</h2>
+  <ul>
+    <li>Механический счётчик</li>
+    <li>Электронный счетчик импульсов</li>
+  </ul>
+</section>
+```
+
+### CSS
+
+```css
+body {
+  counter-reset: cnt;
+}
+
+section {
+  counter-increment: cnt;
+  position: relative;
+}
+
+section h2::before {
+  content: counter(cnt);
+  position: absolute;
+  left: -45px;
+  top: -2px;
+}
+```
+
+{% demo "/content/counter", "Кастомный счётчик", 530 %}
 
 🛠 ...или красиво оформить нумерованный перечень
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="ezhkov" data-slug-hash="BaKJRGw" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="content. counter() 2">
-  <span>See the Pen <a href="https://codepen.io/ezhkov/pen/BaKJRGw">
-  content. counter() 2</a> by Denis Ezhkov (<a href="https://codepen.io/ezhkov">@ezhkov</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+### HTML
+
+```html
+<h2>Наши преимущества:</h2>
+<ul class="benefits">
+  <li class="benefits-item">Низкие цены</li>
+  <li class="benefits-item">Большая база поставщиков</li>
+  <li class="benefits-item">Быстрая доставка</li>
+</ul>
+```
+
+### CSS
+
+```css
+.benefits {
+  counter-reset: benefits;
+}
+
+.benefits-item {
+  counter-increment: benefits;
+}
+
+.benefits-item::before {
+  content: counter(benefits);
+  position: absolute;
+  font-size: 190px;
+  font-weight: bold;
+  left: 0;
+  top: -0.35em;
+  opacity: 0.5;
+  color: #1A5AD7;
+}
+```
+
+{% demo "/content/list", "Нумерованный перечень", 470 %}
 
 {% include "authors/ezhkov_d/author.njk" %}

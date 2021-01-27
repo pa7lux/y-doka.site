@@ -4,7 +4,7 @@ name: height
 author: ABatickaya
 co-authors:
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - высота
   - размер
@@ -22,11 +22,7 @@ summary:
 
 ## Пример
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="ZPQjBW" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="ZPQjBW">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/ZPQjBW">
-  ZPQjBW</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/height/basic", "Высота для блока", 150 %}
 
 ```html
 <div class="container">
@@ -38,13 +34,13 @@ summary:
 .container {
   height: 150px; /* высота родителя */
   padding: 25px;
-  background-color: #f2f2f2;
+  background-color: #AFC9DA;
 }
 
 .item {
   height: 50px; /* высота вложенного блока */
   margin: 0 10px;
-  background-color: #bada55;
+  background-color: #FFFFFF;
 }
 ```
 
@@ -52,11 +48,7 @@ summary:
 
 Добавим контент в элемент `.item`:
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="BbjOgZ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="BbjOgZ">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/BbjOgZ">
-  BbjOgZ</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/height/basic-w-text", "Высота для блока с текстом", 200 %}
 
 Из-за фиксированной высоты контент вываливается из блока. Как можно это исправить? Заменить `height` на `min-height`!
 
@@ -64,17 +56,13 @@ summary:
 .item {
   min-height: 50px; /* Меняем фиксированную высоту на минимальную */
   margin: 0 10px;
-  background-color: #bada55;
+  background-color: #FFFFFF;
 }
 ```
 
 Теперь, если контента внутри не будет, то высота блока будет равна `50px`, но как только появится контент — элемент растянется по высоте так, чтобы уместить в себе весь контент!
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="drXZrd" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="drXZrd">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/drXZrd">
-  drXZrd</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/height/min-height-w-text", "Минимальная высота для блока с текстом", 200 %}
 
 ## Как это понять
 
@@ -156,38 +144,21 @@ CSS
 
 Вернёмся к примеру, который разбирали выше. Можно совсем убрать свойство `height` и заменить его на `padding: 25px`. Теперь, если контента внутри блока нет, то внутренние отступы сверху (25 пикселей) и снизу (25 пикселей) будут растягивать элемент на 50 пикселей.
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="YgWEmv" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="YgWEmv">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/YgWEmv">
-  YgWEmv</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/height/padding", "Высота складывается из padding", 200 %}
 
 Как только добавится контент, блок растянется, не произойдёт никакого выпадения контента, потому что не задана фиксированная высота. От верхнего и нижнего краёв контента до верхнего или нижнего краёв блока соответственно будут отступы в 25 пикселей.
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="xBOpxX" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="xBOpxX">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/xBOpxX">
-  xBOpxX</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/height/padding-w-text", "Высота складывается из padding", 200 %}
 
 Чтобы родительский блок `.container` тоже подстраивался под размеры контента, можно:
 
 1. Заменить фиксированную высоту на минимальную: `min-height: 150px`.
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="KEMZpd" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="KEMZpd">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/KEMZpd">
-  KEMZpd</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/height/min-height-padding-w-text", "Минимальная высота плюс блок с padding", 200 %}
 
 2. Убрать высоту совсем и заменить её на внутренние отступы (`padding`). Этот вариант подойдёт, если не принципиально сохранить высоту 150 пикселей
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="Mxerae" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Mxerae">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/Mxerae">
-  Mxerae</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/height/no-height", "Высота не указана", 140 %}
 
 🛠 Но есть несколько ситуаций, в которых без высоты никак.
 

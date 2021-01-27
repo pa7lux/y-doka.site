@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&amp;display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 5%;
+  background-color: #18191c;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+ol {
+  padding-left: 2em;
+}
+
+li + li {
+  margin-top: 15px;
+}
+
+/* следующий пункт не имеет класса, всё, что мы о нём «знаем» — что он
+   третий <li> по порядку */
+li:nth-of-type(3) {
+  color: #49a16c;
+}
+
+/* 2, 4, 6 пункт с классом .list__item имеет синий цвет, т. е. каждый чётный */
+.list__item:nth-of-type(2n) {
+  /* нечётные элементы записываются как 2n+1 */
+  color: #1a5ad7;
+}
+
+/* первый .list__item в списке */
+.list__item:first-of-type, /* но этот селектор не сработает, потому что
+                              класс .list__item принадлежит к элементу <li>,
+                              а у li:first-of-type не указан класс */
+/* но это так же и второй <li>, если использовать только тег как селектор
+   независимо от того, будет у li указан класс или нет, второй <li> будет
+   иметь красный цвет (если нет свойства у селектора с бо́льшей специфичностью */
+li:nth-of-type(2) {
+  color: #ed6742 !important; /* никогда так не делайте, это лишь для примера,
+                            чтобы повысить специфичность тега и переопределить
+                            .list__item:nth-of-type(2n) */
+}
+
+/* 5-й <li> (или 3 .list__item) — жёлтый */
+li:nth-of-type(5),
+.list__item:nth-of-type(3) {
+  color: #ffd829;
+}
+
+/* последний пункт должен быть белым (укажем это и для тега, и для класса) */
+li:nth-last-of-type(1),
+.list__item:last-of-type {
+  color: #18191c;
+}

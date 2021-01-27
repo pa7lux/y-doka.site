@@ -4,7 +4,7 @@ name: visibility
 author: ABatickaya
 co-authors:
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - visibility
 ---
@@ -18,23 +18,20 @@ summary:
 ## Пример
 
 ```html
-<p class="visible">Я первый параграф</p>
-<p class="hidden">Я второй параграф</p>
-<p class="visible">Я третий параграф</p>
-
-<style>
-  .hidden {
-    visibility: hidden;
-  }
-</style>
+<article>
+	<p class="visibility-visible">Эрнесту Хемингуэю приписывают авторство...</p>
+	<p class="visibility-hidden">Многие писатели упражнялись в жанре сверхмалой прозы...</p>
+	<p class="visibility-visible">В этом жанре можно написать и автобиографию...</p>
+</article>
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="solarrust" data-slug-hash="bGERVxP" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="visibility v1">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/bGERVxP">
-  visibility v1</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+```css
+.visibility-hidden {
+	visibility: hidden;
+}
+```
+
+{% demo "/visibility/", "Свойство visibility", 350 %}
 
 Обратите внимание, что скрытый параграф всё равно влияет на поток документа и занимает отведённое ему место.
 

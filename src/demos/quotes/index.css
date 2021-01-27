@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 5%;
+  quotes: "«" "»" "„" "“";
+  background-color: #282a2e;
+  color: #afc9da;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  font-family: "Roboto", serif;
+}
+
+span:before {
+  content: open-quote;
+}
+
+span:after {
+  content: close-quote;
+}

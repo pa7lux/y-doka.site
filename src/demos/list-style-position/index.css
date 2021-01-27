@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&amp;display=swap");
+
+body {
+  margin: 0;
+  padding: 5%;
+  background-color: #1a5ad7;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  text-align: center;
+}
+.parent {
+  display: flex;
+  justify-content: center;
+}
+
+.parent > div {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+ul {
+  background: rgb(40 42 46 / 0.5);
+}
+
+.outside {
+  list-style-position: outside;
+}
+
+.inside {
+  list-style-position: inside;
+}
+
+li {
+  list-style-image: url(/assets/images/posts/list-style-image/moon.png);
+  font-weight: 300;
+  background: #282a2e;
+}
+
+.code {
+  font-family: monospace;
+  font-size: 0.8em;
+}
+
+li + li {
+  padding-top: 15px;
+}

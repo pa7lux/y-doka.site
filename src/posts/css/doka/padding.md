@@ -5,7 +5,7 @@ author: ABatickaya
 co-authors:
   - furtivite
 designers:
-contributors:
+contributors: skorobaeus
 tags:
   - sprint-4
 summary:
@@ -38,11 +38,7 @@ CSS
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="solarrust" data-slug-hash="MxZJJd" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="MxZJJd">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/MxZJJd">
-  MxZJJd</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/padding/no-padding", "Текст без padding", 220 %}
 
 Текстовый контент, вложенный в блок с классом `.parent`, занимает всю площадь родителя и плотно прилегает к краям.
 
@@ -57,11 +53,7 @@ CSS
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="solarrust" data-slug-hash="ywGgzW" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="ywGgzW">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/ywGgzW">
-  ywGgzW</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/padding/w-padding", "Текст с padding", 330 %}
 
 Почему в данном случае не следует задавать `margin` или `padding` для элемента с классом `.content` чтобы оттолкнуть его от краёв родителя? Потому что нужно стараться верстать максимально гибко с расчётом на изменения в дальнейшем.
 
@@ -127,7 +119,7 @@ CSS
   width: 70%;
   height: 500px; /* Второй блок будет высотой 500 пикселей. Всегда */
   border: 1px solid red;
-  background: url(https://static.appvn.com/a/uploads/thumbnails/112015/mr-square_icon.png)
+  background: url("eyes.png")
     no-repeat center / contain;
 }
 
@@ -137,12 +129,7 @@ CSS
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="solarrust" data-slug-hash="gEZROR" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="gEZROR">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/gEZROR">
-  gEZROR</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/padding/adaptive", "Адаптив через padding", 1200 %}
 
 🛠 Попробуй менять размеры окна браузера и понаблюдать за поведением обоих блоков. Первый будет всегда сохранять пропорции 16:9, а вот второй всегда будет высотой 500 пикселей.
 

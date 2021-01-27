@@ -1,0 +1,19 @@
+body {
+  background-color: #ed6742;
+  padding: 5%;
+  margin: 0;
+}
+
+.image-box {
+  width: 70%;
+  height: 500px;
+  margin: 50px auto;
+  border: 1px solid #000000;
+  background: url("/assets/images/posts/padding/eyes.png") no-repeat center /
+    contain;
+}
+
+.responsive {
+  height: 0;
+  padding-bottom: 56.25%;
+}

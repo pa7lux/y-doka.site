@@ -4,7 +4,7 @@ name: object-fit
 author: ABatickaya
 co-authors:
 designers:
-contributors:
+contributors: skorobaeus
 tags:
   - sprint-4
 summary:
@@ -28,7 +28,7 @@ summary:
 ```html
 <img
   class="image"
-  src="https://picsum.photos/id/1044/500/150"
+  src="landscape.jpg"
   alt="Картинка из примера про object-fit"
 />
 ```
@@ -39,15 +39,11 @@ summary:
 .parent {
   width: 250px;
   height: 250px;
-  border: 2px solid blue; /* Для наглядности */
+  border: 1px solid #FFFFFF; /* Для наглядности */
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="xxOWxNW" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="object-fit. ex1">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/xxOWxNW">
-  object-fit. ex1</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/object-fit/no-fit", "Искаженная картинка", 340 %}
 
 Выглядит не очень. Но тут на помощь приходит свойство `object-fit`, которое позволит нам сохранить пропорции исходного изображения при _подстройке_ под нужные нам размеры.
 
@@ -60,11 +56,7 @@ summary:
 
 Картинка не деформировалась, подстроилась под нужные размеры. Другой вопрос, что на ней теперь почти ничего не видно 😅 , но это мелочи.
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="OJXvPPJ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="object-fit. ex2">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/OJXvPPJ">
-  object-fit. ex2</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/object-fit/fit", "Object-fit", 340 %}
 
 ## Как пишется
 
@@ -78,12 +70,7 @@ summary:
 - `none` — значение по умолчанию, картинка отображается без изменения пропорций или размеров.
 - `scale-down` — браузер сравнивает размеры картинки со значением `none` и со значением `contain` и выбирает одно из этих значений, деформируя картинку соответствующим образом. Сложно объяснить, посмотрите демку 🥴
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="zYBWxWJ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="object-fit. demo">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/zYBWxWJ">
-  object-fit. demo</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/object-fit/every", "Варианты object-fit", 1700 %}
 
 Советую поизменять размер окна браузера чтобы наглядно увидеть как картинки подстраиваются (или нет) под заданные размеры.
 

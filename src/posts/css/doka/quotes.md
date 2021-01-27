@@ -4,7 +4,7 @@ name: quotes
 author: ABatickaya
 co-authors:
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - quotes
 ---
@@ -41,12 +41,7 @@ span:after {
 
 В итоге текст будет выглядеть так:
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="solarrust" data-slug-hash="LYGBgdE" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="quotes">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/LYGBgdE">
-  quotes</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/quotes/", "Стилизация кавычек", 120 %}
 
 ## Как пишется
 

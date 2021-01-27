@@ -5,7 +5,7 @@ author: ABatickaya
 co-authors:
   - furtivite
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - text-decoration
 ---
@@ -24,10 +24,10 @@ HTML
 
 ```html
 <div class="parent">
-  <p class="none">Lorem ...</p>
-  <p class="underline">Lorem ...</p>
-  <p class="line-through">Lorem ...</p>
-  <p class="overline">Lorem, ...</p>
+  <p class="none">Диакритические знаки...</p>
+  <p class="underline">В типографике...</p>
+  <p class="line-through">Диакритическими знаками не могут...</p>
+  <p class="overline">Черта сверху — типографический знак...</p>
 </div>
 ```
 
@@ -51,11 +51,7 @@ CSS
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="solarrust" data-slug-hash="drjJYx" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="drjJYx">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/drjJYx">
-  drjJYx</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/text-decoration/basic", "Декор текста", 710 %}
 
 # Как это понять
 
@@ -134,11 +130,7 @@ p {
 
 <a name="example"></a>
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="solarrust" data-slug-hash="vPaddd" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="vPaddd">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/vPaddd">
-  vPaddd</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/text-decoration/color", "Анимированный декор текста", 730 %}
 
 💡 Нельзя управлять толщиной и положением линии, заданной при помощи `text-decoration`.
 
@@ -162,7 +154,7 @@ HTML
 
 ```html
 <header>
-  <div class="container">
+  <div class="container top">
     <nav>
       <ul class="navigation">
         <li class="navigation__item">
@@ -180,59 +172,32 @@ HTML
       </ul>
     </nav>
   </div>
+  <div class="container">
+    <h1>Магазин «лето»</h1>
+  </div>
 </header>
 ```
 
 CSS
 
 ```css
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-header {
-  padding: 10px 0 0;
-  background: blue;
-  color: yellow;
-}
-
-.container {
-  width: 60%;
-  max-width: 1230px;
-  margin: 0 auto;
-}
-
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  padding-inline-start: 0;
-  font-weight: bold;
-  margin: 0;
-}
-
-.navigation__link,
-.navigation__link:visited {
+.navigation__link, .navigation__link:visited {
   display: inline-block; /* делаем элементы строчно-блочными */
-  color: inherit;
+  color: #18191C;
   text-decoration: none; /* убираем подчеркивание */
-  padding-bottom: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-transform: uppercase;
+	font-weight: 500;
+  font-size: 15px;
 }
 
 .navigation__link:hover {
-  color: white;
-  padding-bottom: 8px; /* нивелируем размеры рамки */
-  border-bottom: 2px solid white; /* добавляем рамку снизу */
+  padding-bottom: 14px; /* нивелируем размеры рамки */
+  border-bottom: 2px solid #18191C; /* добавляем рамку снизу */
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="furtivite" data-slug-hash="QWNpgQa" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="border-bottom vs. text-decoration">
-  <span>See the Pen <a href="https://codepen.io/furtivite/pen/QWNpgQa">
-  border-bottom vs. text-decoration</a> by Egor (<a href="https://codepen.io/furtivite">@furtivite</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/text-decoration/header", "Рамка вместо подчеркивания", 460 %}
 
 {% include "authors/ABatickaya/author.njk" %}

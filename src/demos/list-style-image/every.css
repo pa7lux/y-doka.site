@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  margin: 0;
+  padding: 5%;
+  background-color: #18191c;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  text-align: center;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  list-style-image: none;
+}
+
+li {
+  font-weight: 300;
+}
+
+.url {
+  list-style-image: url(/assets/images/posts/list-style-image/moon.png);
+}
+
+.url2 {
+  list-style-image: url(/assets/images/posts/list-style-image/halfmoon-big.png);
+}
+
+.code {
+  font-family: monospace;
+  font-size: 0.8em;
+}
+
+li + li {
+  margin-top: 15px;
+}

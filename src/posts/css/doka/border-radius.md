@@ -4,7 +4,7 @@ name: border-radius
 author: ABatickaya
 co-authors:
 designers:
-contributors:
+contributors: skorobaeus
 tags:
   - sprint-4
 summary:
@@ -36,21 +36,13 @@ CSS
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="solarrust" data-slug-hash="oNbbaEK" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="oNbbaEK">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/oNbbaEK">
-  oNbbaEK</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/border-radius/basic", "Кнопка", 140 %}
 
 Обрати внимание, что мы _сбросили_ стандартную рамку кнопки, но углы тем не менее слегка закруглились.
 
-Если добавить кнопке тень и интересную реакцию на наведение курсора и нажатие, то получится привлекательно и современно 😉
+Если добавить кнопке внутреннюю тень и интересную реакцию на нажатие, то получится привлекательно и современно 😉
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="solarrust" data-slug-hash="ROZeQE" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="ROZeQE">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/ROZeQE">
-  ROZeQE</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/border-radius/interactive", "Интерактивная кнопка", 140 %}
 
 ## Как это понять
 
@@ -104,18 +96,13 @@ CSS
 ```css
 .text:after {
   content: attr(data-msg);
-  width: 20px; /* равные ширина */
-  height: 20px; /* и высота */
+  width: 31px; /* равные ширина */
+  height: 31px; /* и высота */
   border-radius: 50%; /* закругляем углы на 50% */
-  background-color: red;
+  color: #1A5AD7;
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="solarrust" data-slug-hash="bJrQrq" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="bJrQrq">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/bJrQrq">
-  bJrQrq</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/border-radius/counter", "Счётчик", 135 %}
 
 {% include "authors/ABatickaya/author.njk" %}

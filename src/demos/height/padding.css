@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+
+.container {
+  height: 150px;
+  padding: 25px;
+  background-color: #1a5ad7;
+}
+
+.item {
+  box-sizing: border-box;
+  padding: 25px;
+  margin: 0 10px;
+  color: #1a5ad7;
+  background-color: #ffffff;
+}

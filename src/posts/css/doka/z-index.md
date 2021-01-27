@@ -4,7 +4,7 @@ name: z-index
 author: ABatickaya
 co-authors:
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - поток документа
   - наложение
@@ -35,7 +35,7 @@ summary:
 ```css
 header {
   position: relative;
-  background: url("../img/bkg.jpg") no-repeat center / cover;
+  background: url("landscape.jpg") no-repeat center / cover;
 }
 
 header:after {
@@ -65,12 +65,7 @@ header:after {
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="jOqmKmO" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="z-index example">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/jOqmKmO">
-  z-index example</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/z-index/", "Вуаль для картинки", 460 %}
 
 ## Как пишется
 

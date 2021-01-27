@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+}
+
+.container {
+  height: 150px;
+  padding: 25px;
+  background-color: #afc9da;
+  font-size: 0;
+}
+
+.item {
+  height: 50px;
+  margin: 0 10px;
+  background-color: #ffffff;
+}

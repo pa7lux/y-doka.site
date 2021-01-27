@@ -4,7 +4,7 @@ name: child
 author: ABatickaya
 co-authors:
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - псевдокласс
 ---
@@ -19,49 +19,44 @@ summary:
 
 ```html
 <ul class="list">
-  <li class="list-item">Пункт 1</li>
-  <li class="list-item">Пункт 2</li>
-  <li class="list-item">Пункт 3</li>
-  <li class="list-item">Пункт 4</li>
-  <li class="list-item">Пункт 5</li>
-  <li class="list-item">Пункт 6</li>
-  <li class="list-item">Пункт 7</li>
+	<li class="list-item">Темный синевато-зеленый</li>
+	<li class="list-item">Блестящий зелёный</li>
+	<li class="list-item">Блестящий зеленовато-желтый</li>
+	<li class="list-item">Блестящий зеленовато-желтый</li>
+	<li class="list-item">Блестящий зеленовато-желтый</li>
+	<li class="list-item">Розовый щербет</li>
+	<li class="list-item">Умеренный оранжевый</li>
 </ul>
 ```
 
 ```css
-/* У всех пунктов списка будет серый фон */
+/* У всех пунктов списка будет жёлтый фон */
 .list-item {
-  background-color: #f1f1f1;
+	background-color: #FFD829;
 }
 
-/* У первого пункта списка, первого ребёнка будет зелёный цвет фона */
+/* У первого пункта списка, первого ребёнка будет тёмно-зелёный цвет фона */
 .list-item:first-child {
-  background-color: lime;
+	background-color: #064236;
 }
 
-/* У последнего пункта списка, последнего ребёнка будет пурпурный цвет фона */
+/* У последнего пункта списка, последнего ребёнка будет оранжевый цвет фона */
 .list-item:last-child {
-  background-color: purple;
+	background-color: #ED6742;
 }
 
-/* У второго пункта списка будет голубой цвет фона */
+/* У второго пункта списка будет зелёный цвет фона */
 .list-item:nth-child(2) {
-  background-color: lightblue;
+	background-color: #49A16C;
 }
 
 /* У предпоследнего пункта списка будет розовый цвет фона */
 .list-item:nth-last-child(2) {
-  background-color: pink;
+	background-color: #F498AD;
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="GRqGyzb" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="GRqGyzb">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/GRqGyzb">
-  GRqGyzb</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/child/", "Псевдоклассы -child", 390 %}
 
 ## Как пишется
 

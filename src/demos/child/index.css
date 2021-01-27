@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&amp;display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 5%;
+  background-color: #18191c;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.list {
+  padding-left: 1em;
+  list-style-image: url("/assets/images/posts/child/marker.png");
+}
+
+.list-item {
+  padding: 10px;
+  color: #000000;
+  line-height: 1;
+}
+
+.list-item + .list-item {
+  margin-top: 5px;
+}
+
+/* У всех пунктов списка будет жёлтый фон */
+.list-item {
+  background-color: #ffd829;
+}
+
+/* У первого пункта списка, первого ребёнка будет тёмно-зелёный цвет фона */
+.list-item:first-child {
+  background-color: #064236;
+}
+
+/* У последнего пункта списка, последнего ребёнка будет оранжевый цвет фона */
+.list-item:last-child {
+  background-color: #ed6742;
+}
+
+/* У второго пункта списка будет зелёный цвет фона */
+.list-item:nth-child(2) {
+  background-color: #49a16c;
+}
+
+/* У предпоследнего пункта списка будет розовый цвет фона */
+.list-item:nth-last-child(2) {
+  background-color: #f498ad;
+}

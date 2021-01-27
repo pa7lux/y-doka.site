@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  counter-reset: cnt;
+  padding: 5% 15%;
+  background-color: #18191c;
+  color: #e6e6e6;
+  font-family: "Roboto", sans-serif;
+}
+
+section + section {
+  margin-top: 40px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+section {
+  counter-increment: cnt;
+  position: relative;
+}
+
+section h2::before {
+  content: counter(cnt);
+  position: absolute;
+  left: -45px;
+  top: -2px;
+  color: #49a16c;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  width: 31px;
+  height: 31px;
+  line-height: 31px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}

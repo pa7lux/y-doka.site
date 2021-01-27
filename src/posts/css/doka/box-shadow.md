@@ -4,7 +4,7 @@ name: box-shadow
 author: ABatickaya
 co-authors:
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - box-shadow
 ---
@@ -27,17 +27,13 @@ summary:
 
 ```css
 .btn {
-  box-shadow: 0 5px 10px gray;
+  box-shadow: -15px 15px 0px 0px #ED6742;
 }
 ```
 
 Получаем псевдообъёмную кнопку, которая парит над страницей:
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="solarrust" data-slug-hash="vYKMNwz" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="vYKMNwz">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/vYKMNwz">
-  vYKMNwz</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/box-shadow/button", "Объемная кнопка", 170 %}
 
 ## Как пишется
 
@@ -80,11 +76,11 @@ summary:
 
 ![Старый и новый дизайн иконок эппла](/assets/images/posts/box-shadow/box-shadow1.png)
 
-Слева старый дизайн иконок эппла в стиле скеоморфизм
+Слева старый дизайн иконок эппла в стиле скевоморфизм
 
-![Дизайн в стиле скеоморфизм](/assets/images/posts/box-shadow/box-shadow2.png)
+![Дизайн в стиле скевоморфизм](/assets/images/posts/box-shadow/box-shadow2.png)
 
-Новые, современные эксперименты с дизайном в стиле скеоморфизм. Обратите внимание на количество теней (внутренних и внешних) у каждого из элементов. Именно за счёт теней создаётся объём одноцветных элементов.
+Новые, современные эксперименты с дизайном в стиле скевоморфизм. Обратите внимание на количество теней (внутренних и внешних) у каждого из элементов. Именно за счёт теней создаётся объём одноцветных элементов.
 
 ## Подсказки
 
@@ -96,19 +92,56 @@ summary:
 
 🛠 С помощью тени можно создать блок с несколькими рамками!
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="solarrust" data-slug-hash="MWeRyqL" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="MWeRyqL">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/MWeRyqL">
-  MWeRyqL</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+```html
+<div class="box square"></div>
+<div class="box circle"></div>
+```
 
-🛠 Тени можно использовать для ховер-эффектов. Сделаем так, чтобы при наведении курсора кнопка _приподнималась_ навстречу пользователю, а по нажатию на неё тень станет внутренней, делая кнопку _вжатой_.
+```css
+.box {
+	width: 150px;
+	height: 150px;
+	box-shadow:
+	inset 0 0 6px 0px #c000ff,
+				0 0 0 3px #c000ff,
+				0 0 6px 3px #c000ff,
+				0 0 0 7px #18191C,
+				0 0 0 10px #6e4aff,
+				0 0 6px 10px #6e4aff,
+				0 0 0 14px #18191C,
+				0 0 0 17px #c000ff,
+				0 0 6px 17px #c000ff;
+}
+```
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="gOMyMre" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="gOMyMre">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/gOMyMre">
-  gOMyMre</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/box-shadow/neon", "Неоновые рамки", 240 %}
+
+🛠 Тени можно использовать для ховер-эффектов. При помощи теней кнопка сделана выпуклой, а при нажатии она становится впуклой за счёт изменения положения теней.
+
+```html
+<button class="btn">Зажми</button>
+```
+
+```css
+.btn {
+	box-shadow:
+		5px 5px 10px #c9c9c9,
+		inset -5px -5px 8px -4px #c9c9c9,
+		-5px -5px 10px #fdfdfd,
+		inset 5px 5px 8px -4px #fdfdfd;
+}
+
+.btn:active {
+	box-shadow:
+		5px 5px 10px #c9c9c9,
+		inset -5px -5px 8px -4px #c9c9c9,
+		inset -6px -6px 8px 0px #fdfdfd,
+		-5px -5px 10px #fdfdfd,
+		inset 5px 5px 8px -4px #fdfdfd,
+		inset 6px 6px 8px 0px #c9c9c9;
+}
+```
+
+{% demo "/box-shadow/skeuomorph", "Скевоморфизм", 145 %}
 
 {% include "authors/ABatickaya/author.njk" %}
