@@ -99,18 +99,18 @@ summary:
 
 ```css
 .box {
-	width: 150px;
-	height: 150px;
-	box-shadow:
-	inset 0 0 6px 0px #c000ff,
-				0 0 0 3px #c000ff,
-				0 0 6px 3px #c000ff,
-				0 0 0 7px #18191C,
-				0 0 0 10px #6e4aff,
-				0 0 6px 10px #6e4aff,
-				0 0 0 14px #18191C,
-				0 0 0 17px #c000ff,
-				0 0 6px 17px #c000ff;
+  width: 150px;
+  height: 150px;
+  box-shadow:
+  inset 0 0 6px 0px #c000ff,
+  0 0 0 3px #c000ff,
+  0 0 6px 3px #c000ff,
+  0 0 0 7px #18191C,
+  0 0 0 10px #6e4aff,
+  0 0 6px 10px #6e4aff,
+  0 0 0 14px #18191C,
+  0 0 0 17px #c000ff,
+  0 0 6px 17px #c000ff;
 }
 ```
 

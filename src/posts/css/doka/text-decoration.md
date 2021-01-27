@@ -188,7 +188,7 @@ CSS
   padding-top: 16px;
   padding-bottom: 16px;
   text-transform: uppercase;
-	font-weight: 500;
+  font-weight: 500;
   font-size: 15px;
 }
 

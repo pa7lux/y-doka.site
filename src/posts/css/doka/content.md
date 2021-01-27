@@ -120,7 +120,7 @@ content: unset;
 
 ```css
 [data-tip] {
-	position: relative;
+  position: relative;
   cursor: help;
 }
 

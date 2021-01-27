@@ -21,13 +21,13 @@ HTML
 
 ```html
 <div class="parent">
-	<h1 class="title">title case</h1>
-	<p class="paragraph">Title case (англ. «регистр заголовка»)...</p>
+  <h1 class="title">title case</h1>
+  <p class="paragraph">Title case (англ. «регистр заголовка»)...</p>
 
-	<article class="news">
-		<h2 class="title-case">who framed roger rabbit?</h2>
-		<p class="paragraph">The overarching villain...</p>
-	</article>
+  <article class="news">
+    <h2 class="title-case">who framed roger rabbit?</h2>
+    <p class="paragraph">The overarching villain...</p>
+  </article>
 </div>
 ```
 
@@ -81,7 +81,7 @@ CSS
 
 ```css
 .abbreviation {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 ```
 

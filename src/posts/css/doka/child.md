@@ -19,13 +19,13 @@ summary:
 
 ```html
 <ul class="list">
-	<li class="list-item">Темный синевато-зеленый</li>
-	<li class="list-item">Блестящий зелёный</li>
-	<li class="list-item">Блестящий зеленовато-желтый</li>
-	<li class="list-item">Блестящий зеленовато-желтый</li>
-	<li class="list-item">Блестящий зеленовато-желтый</li>
-	<li class="list-item">Розовый щербет</li>
-	<li class="list-item">Умеренный оранжевый</li>
+  <li class="list-item">Темный синевато-зеленый</li>
+  <li class="list-item">Блестящий зелёный</li>
+  <li class="list-item">Блестящий зеленовато-желтый</li>
+  <li class="list-item">Блестящий зеленовато-желтый</li>
+  <li class="list-item">Блестящий зеленовато-желтый</li>
+  <li class="list-item">Розовый щербет</li>
+  <li class="list-item">Умеренный оранжевый</li>
 </ul>
 ```
 

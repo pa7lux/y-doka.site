@@ -19,9 +19,9 @@ summary:
 
 ```html
 <article>
-	<p class="visibility-visible">Эрнесту Хемингуэю приписывают авторство...</p>
-	<p class="visibility-hidden">Многие писатели упражнялись в жанре сверхмалой прозы...</p>
-	<p class="visibility-visible">В этом жанре можно написать и автобиографию...</p>
+  <p class="visibility-visible">Эрнесту Хемингуэю приписывают авторство...</p>
+  <p class="visibility-hidden">Многие писатели упражнялись в жанре сверхмалой прозы...</p>
+  <p class="visibility-visible">В этом жанре можно написать и автобиографию...</p>
 </article>
 ```
 
