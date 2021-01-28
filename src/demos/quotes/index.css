@@ -16,7 +16,7 @@ body {
   font-family: "Roboto", serif;
 }
 
-span:before {
+span::before {
   content: open-quote;
 }
 
