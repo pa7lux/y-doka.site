@@ -5,6 +5,8 @@ author: ezhkov_d
 co-authors:
 designers:
 contributors:
+tags:
+  - sprint-1
 summary:
   - селектор
   - атрибут

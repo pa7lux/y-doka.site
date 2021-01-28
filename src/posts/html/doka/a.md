@@ -9,6 +9,8 @@ contributors:
   - ABatickaya
   - grachev
   - skorobaeus
+tags:
+  - sprint-1
 summary:
   - ссылка
   - <a>

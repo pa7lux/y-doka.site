@@ -7,6 +7,8 @@ co-authors:
   - vladimir
 designers:
 contributors:
+tags:
+  - sprint-3
 summary:
   - тэг
   - тег

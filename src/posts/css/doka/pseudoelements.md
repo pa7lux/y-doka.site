@@ -5,6 +5,8 @@ author: ABatickaya
 co-authors:
 designers:
 contributors: furtivite
+tags:
+  - sprint-1
 summary:
   - псевдоэлемент
   - селекторы

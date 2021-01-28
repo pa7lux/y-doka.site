@@ -5,6 +5,8 @@ author: ABatickaya
 co-authors:
 designers:
 contributors: skorobaeus
+tags:
+  - sprint-1
 summary:
   - поток документа
   - наложение

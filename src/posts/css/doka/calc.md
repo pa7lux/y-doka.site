@@ -5,6 +5,8 @@ author: ABatickaya
 co-authors:
 designers:
 contributors:
+tags:
+  - sprint-3
 summary:
   - функция
   - вычисление

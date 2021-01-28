@@ -5,6 +5,8 @@ author: grachev
 co-authors:
 designers:
 contributors:
+tags:
+  - sprint-1
 summary:
   - подключение стилей
   - link

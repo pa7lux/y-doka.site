@@ -7,6 +7,7 @@ co-authors:
 designers:
 contributors: skorobaeus
 tags:
+  - sprint-1
   - sprint-4
 summary:
   - флексбокс

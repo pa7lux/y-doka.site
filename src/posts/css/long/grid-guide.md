@@ -7,6 +7,7 @@ designers:
 contributors:
 tags:
   - sprint-4
+  - sprint-3
 summary:
   - grid
   - display: grid

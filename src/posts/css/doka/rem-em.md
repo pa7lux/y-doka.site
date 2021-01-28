@@ -5,6 +5,8 @@ author: Roman_Ganin
 co-authors:
 designers:
 contributors:
+tags:
+  - sprint-3
 summary:
   - единицы измерения
   - относительные единицы
