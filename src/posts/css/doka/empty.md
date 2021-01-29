@@ -1,6 +1,8 @@
 ---
 title: ":empty"
-name: empty author: ezhkov_d co-authors:
+name: empty
+author: ezhkov_d
+co-authors:
 designers:
 contributors:
 summary:
