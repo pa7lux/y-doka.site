@@ -51,7 +51,18 @@ summary:
 
 Внешний вид оформления рамки по умолчанию у `<legend>` немного отличается в зависимости от браузера и операционной системы:
 
+
 <table>
+  <thead>
+    <tr>
+      <th>
+        Windows 10, Google Chrome 71.0
+      </th>
+      <th>
+        MacOS Big Sur, Google Chrome 71.0
+      </th>
+    </tr>
+  </thead>
   <tbody>
     <tr>
       <td>
@@ -61,17 +72,22 @@ summary:
         <img src="/assets/images/posts/fieldset/macbsr_chrome_71.0.png" alt="">
       </td>
     </tr>
+  </tbody>
+</table>
+
+
+<table>
+  <thead>
     <tr>
-      <td>
-        Windows 10, Google Chrome 71.0
-      </td>
-      <td>
-        MacOS Big Sur, Google Chrome 71.0
-      </td>
+      <th>
+        Windows 10, Edge 18.0
+      </th>
+      <th>
+        MacOS Big Sur, Safari 14.0
+      </th>
     </tr>
-    <tr>
-      <td colspan="2"></td>
-    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td>
         <img src="/assets/images/posts/fieldset/win10_edge_18.0.png" alt="">
@@ -80,17 +96,22 @@ summary:
         <img src="/assets/images/posts/fieldset/macbsr_safari_14.0.jpg" alt="">
       </td>
     </tr>
+  </tbody>
+</table>
+
+
+<table>
+  <thead>
     <tr>
-      <td>
-        Windows 10, Edge 18.0
-      </td>
-      <td>
-        MacOS Big Sur, Safari 14.0
-      </td>
+      <th>
+        Windows 8, Internet Explorer 10.0
+      </th>
+      <th>
+        Windows 7, Internet Explorer 9.0
+      </th>
     </tr>
-    <tr>
-      <td colspan="2"></td>
-    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td>
         <img src="/assets/images/posts/fieldset/win8_ie_10.0.png" alt="">
@@ -99,31 +120,28 @@ summary:
         <img src="/assets/images/posts/fieldset/win7_ie_9.0.png" alt="">
       </td>
     </tr>
+  </tbody>
+</table>
+
+
+<table>
+  <thead>
     <tr>
-      <td>
-        Windows 8, Internet Explorer 10.0
-      </td>
-      <td>
-        Windows 7, Internet Explorer 9.0
-      </td>
+      <th>
+        Samsung Galaxy S7
+      </th>
+      <th>
+        Google Nexus 6
+      </th>
     </tr>
-    <tr>
-      <td colspan="2"></td>
-    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td>
         <img src="/assets/images/posts/fieldset/6.0_Samsung-Galaxy-S7_portrait_real-mobile.png" alt="">
       </td>
       <td>
         <img src="/assets/images/posts/fieldset/6.0_Google-Nexus-6_portrait_real-mobile.png" alt="">
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Samsung Galaxy S7
-      </td>
-      <td>
-        Google Nexus 6
       </td>
     </tr>
   </tbody>
