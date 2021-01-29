@@ -1,9 +1,8 @@
 ---
-title: <legend>
+title: "<legend>"
 name: legend
-author: vladimir
+author: Roman_Ganin
 co-authors:
-  - ABatickaya
 designers:
 contributors: skorobaeus
 summary:
