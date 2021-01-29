@@ -7,6 +7,8 @@ co-authors:
   - vladimir
 designers:
 contributors:
+tags:
+  - sprint-2
 summary:
   - button
   - <button>
