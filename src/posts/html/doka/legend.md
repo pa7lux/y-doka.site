@@ -30,7 +30,7 @@ summary:
 
 ## Как это понять
 
-`<fieldset>` позволяет описать содержимое `<fieldset>`, но семантически он не является «представителем» h1-h6-заголовков, хотя выполняет схожую функцию, только без здния иерархии, а лишь характеризуя контент внутри «своей» группы — как `<label>` для соответствующего контрола.
+`<fieldset>` позволяет описать содержимое `<fieldset>`, но семантически он не является «представителем» h1-h6-заголовков, хотя выполняет схожую функцию, только без задания иерархии, а лишь характеризуя контент внутри «своей» группы — как `<label>` для соответствующего контрола.
 
 ## Как пишется
 
@@ -38,7 +38,7 @@ summary:
 
 ## Атрибуты
 
-У `<legend>` нет никаких «своих» атрибутов, ему доступны все *глобальные атрибуты*. Но для выравнивания текста по краю или по центру не стилизовать без атрибута `align` (CSS-свойство `text-align` работать не будет, даже если задать `display: block`):
+У `<legend>` нет никаких «своих» атрибутов, ему доступны все *глобальные атрибуты*. Но для выравнивания текста по краю или по центру не обойтись без атрибута `align` (CSS-свойство `text-align` работать не будет, даже если задать `display: block`):
 
 ```html
 <fieldset>
@@ -48,6 +48,86 @@ summary:
 ```
 
 ## Подсказки
+
+Внешний вид оформления рамки по умолчанию у `<legend>` немного отличается в зависимости от браузера и операционной системы:
+
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <img src="/assets/images/posts/fieldset/win10_chrome_71.0.png" alt="">
+      </td>
+      <td>
+        <img src="/assets/images/posts/fieldset/macbsr_chrome_71.0.png" alt="">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Windows 10, Google Chrome 71.0
+      </td>
+      <td>
+        MacOS Big Sur, Google Chrome 71.0
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>
+        <img src="/assets/images/posts/fieldset/win10_edge_18.0.png" alt="">
+      </td>
+      <td>
+        <img src="/assets/images/posts/fieldset/macbsr_safari_14.0.jpg" alt="">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Windows 10, Edge 18.0
+      </td>
+      <td>
+        MacOS Big Sur, Safari 14.0
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>
+        <img src="/assets/images/posts/fieldset/win8_ie_10.0.png" alt="">
+      </td>
+      <td>
+        <img src="/assets/images/posts/fieldset/win7_ie_9.0.png" alt="">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Windows 8, Internet Explorer 10.0
+      </td>
+      <td>
+        Windows 7, Internet Explorer 9.0
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>
+        <img src="/assets/images/posts/fieldset/6.0_Samsung-Galaxy-S7_portrait_real-mobile.png" alt="">
+      </td>
+      <td>
+        <img src="/assets/images/posts/fieldset/6.0_Google-Nexus-6_portrait_real-mobile.png" alt="">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Samsung Galaxy S7
+      </td>
+      <td>
+        Google Nexus 6
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 За счёт особой формы «обтекания» рамкой текста, это можно использовать для характерной стилизации блока и заголовка:
 
